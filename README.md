@@ -27,7 +27,7 @@ After you run the server, it serves on port 8000
     ```
     join second user
     ```
-        curl -X POST http://localhost:8000/api/games/1/join -H "Content-Type: application/json" -d "{\"user\": \"amit\"}"
+    curl -X POST http://localhost:8000/api/games/1/join -H "Content-Type: application/json" -d "{\"user\": \"amit\"}"
     ```
 3. You can check the status of the game or the status of the user in the game. (every time you what)
     ```

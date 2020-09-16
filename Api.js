@@ -20,7 +20,7 @@ module.exports = {
             games.statusByUser(req.params.gameId, req.params.userId, sendRes(res), sendBadReq(res))
         })
         app.post('/api/games/:gameId/play/users/:userId', (req, res) => {
-            if (req.body.x && req.body.y) {
+            if (req.body.x !== undefined && req.body.y !== undefined) {
                 games.move(req.params.gameId, req.params.userId, req.body.x, req.body.y, sendRes(res), sendBadReq(res))
             } else {
                 sendBadReq(res)(C.ERRORS.BODY_PARAMS_NOT_PROVIDED)
