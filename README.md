@@ -4,6 +4,17 @@ You can try the api with curl (like the examples) or your preffered http request
 
 The examples below are Window's oriented.
 
+## How to run
+```
+git clone https://github.com/DanielleZror/tic-tac-toe.git
+cd tic-tac-toe
+npm install
+npm start
+```
+
+After you run the server, it serves on port 8000
+
+
 ## Gameplay simulation -
 1. Create a game
     ```
